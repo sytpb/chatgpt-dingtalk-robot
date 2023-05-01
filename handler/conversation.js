@@ -1,5 +1,7 @@
 
 import axios from "axios";
+import {getAccessToken} from "../ding/accesstoken.js";
+
 /*import debug from "../comm/debug.js";
 import Message from "../comm/message.js";
 import TextChat from "../chat/text.js";*/
@@ -15,6 +17,7 @@ export default class Conversation {
 
     async process(body, res) {
         const info = body;
+        const token = await getAccessToken();
         const staffID = info?.senderStaffId;
         const data = {
             "robotCode": info.robotCode,
@@ -28,7 +31,7 @@ export default class Conversation {
             headers: {
                 'Accept': "application/json",
                 'Content-Type': "application/json",
-                'x-acs-dingtalk-access-token': '170cd5c344053f008d2e54f5f590e995'
+                'x-acs-dingtalk-access-token': token
             }
         };
 
