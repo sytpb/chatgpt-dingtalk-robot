@@ -68,9 +68,9 @@
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 
-![image](https://user-images.githubusercontent.com/12178686/233276472-77ad1f07-e275-4bc2-a0fa-1c7d0b7172bc.png)
+![image](https://user-images.githubusercontent.com/12178686/235695916-e0d48472-6769-4d92-bdbb-7721496f3575.png)
 
-如图所示，将上面的字段信息填入，然后点击Apply。 
+如图所示，将上面的字段信息填入，端口填入4位数，比如7070，然后点击Apply。 
 
 
 需要等3-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，然后点保存，看到提示类似”保存成功“，代表服务已经配置成功了！
