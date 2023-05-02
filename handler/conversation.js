@@ -11,6 +11,8 @@ export default class Conversation {
     }
 
     process(body, res) {
+        
+        let chat = null; 
         const info = body;
         const msgtype = info.msgtype;
         console.log(info);
