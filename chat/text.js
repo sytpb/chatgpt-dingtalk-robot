@@ -3,7 +3,7 @@ import axios from "axios";
 import Chat from "./chat.js";
 import debug from "../comm/debug.js";
 import { OpenAI } from "../service/openai.js";
-
+import { getAccessToken } from "../ding/accesstoken.js";
 
 export default class TextChat extends Chat {
 

@@ -42,14 +42,12 @@ export class OpenAI {
 
     async ctText(question) {
 
-        console.log(process.env.OPENAI_API_KEY);
-
         try {
             const res = await this.#openai.createChatCompletion({
                 model: models[2],
                 messages:[{role:"user",content: question}]
             });
-            console.log(res);
+
             return res;
         }
         catch(error) {
