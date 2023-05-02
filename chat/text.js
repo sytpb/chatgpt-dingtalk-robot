@@ -39,7 +39,7 @@ export default class TextChat extends Chat {
     async toGroup(conversationID, robotCode, answer) {
         /*response to dingtalk*/
         const token = await getAccessToken();
-        debug.log(answer);
+        debug.out(answer);
 
         const data = {
             "robotCode": robotCode,
