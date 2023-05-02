@@ -9,6 +9,7 @@ export default class TextChat extends Chat {
 
     constructor(name) {
         super(name);
+        this.host = 'https://api.dingtalk.com';
     }
 
     async toUser(staffID, robotCode, answer) {
@@ -22,7 +23,7 @@ export default class TextChat extends Chat {
             "msgKey": "sampleText",
             "msgParam": JSON.stringify({ "content": answer })
         };
-        const url = 'https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend';
+        const url = this.host + '/v1.0/robot/oToMessages/batchSend';
 
         const config = {
             headers: {
@@ -46,7 +47,8 @@ export default class TextChat extends Chat {
             "msgKey": "sampleText",
             "msgParam": JSON.stringify({ "content": answer })
         };
-        const url = 'https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend';
+        
+        const url = this.host + '/v1.0/robot/groupMessages/send';
 
         const config = {
             headers: {
