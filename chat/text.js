@@ -11,7 +11,7 @@ export default class TextChat extends Chat {
         super(name);
     }
 
-    async response(staffID, robotCode, answer) {
+    async toUser(staffID, robotCode, answer) {
         /*response to dingtalk*/
         const token = await getAccessToken();
         debug.log(answer);
@@ -35,23 +35,49 @@ export default class TextChat extends Chat {
         return axios.post(url, data, config);
     }
 
+    async toGroup(conversationID, robotCode, answer) {
+        /*response to dingtalk*/
+        const token = await getAccessToken();
+        debug.log(answer);
+
+        const data = {
+            "robotCode": robotCode,
+            "openConversationId": conversationID,
+            "msgKey": "sampleText",
+            "msgParam": JSON.stringify({ "content": answer })
+        };
+        const url = 'https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend';
+
+        const config = {
+            headers: {
+                'Accept': "application/json",
+                'Content-Type': "application/json",
+                'x-acs-dingtalk-access-token': token
+            }
+        };
+
+        return axios.post(url, data, config);
+    }
+
     process(info, res) {
 
-        debug.log("text chat...");
         const question = info?.text?.content;
-        const staffID = info?.senderStaffId;
+        //const staffID = info?.senderStaffId;
         const robotCode = info?.robotCode;
 
         const openai = new OpenAI();
         openai.ctText(question).then(result => {
             const content = result?.data?.choices[0]?.message?.content;
-            debug.log(content);
-            if (!!content) {
-                const answer = content;
-                this.response(staffID, robotCode, answer);
-            }
-        });
+            debug.out(content);
+            if (!content)
+                return;
 
+            const answer = content;
+            if(info.conversationType === '1')
+                this.toUser(info?.senderStaffId, robotCode, answer);
+            else if(info.conversationType === '2')
+                this.toGroup(info?.conversationId, robotCode, answer);
+        });
     }
 
 }

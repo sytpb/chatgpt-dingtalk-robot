@@ -15,13 +15,12 @@ export default class Conversation {
         let chat = null; 
         const info = body;
         const msgtype = info.msgtype;
-        console.log(info);
+        /*debug.out(info);*/
 
         if(msgtype === "text") {
             chat = new TextChat(msgtype);
         }
 
-        debug.log(!!chat);
         if(!!chat) {
             chat.process(info, res);
             res.send("OK");
