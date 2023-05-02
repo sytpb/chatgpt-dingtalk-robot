@@ -1,4 +1,4 @@
-# 零代码 一键部署chatGPT到钉钉 无须VPN<br/>
+# 零代码 一键部署ChatGPT到钉钉 无须VPN<br/>
 
 
 
