@@ -1,9 +1,6 @@
-import request from "request";
 import axios from "axios";
 
 let accessToken = { token: 'NO_TICKET', expire: 0 };
-
-
 
 
 function newAccessToken() {

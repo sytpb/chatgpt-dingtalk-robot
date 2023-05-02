@@ -1,10 +1,5 @@
-
-import axios from "axios";
-import {getAccessToken} from "../ding/accesstoken.js";
-
-/*import debug from "../comm/debug.js";
-import Message from "../comm/message.js";
-import TextChat from "../chat/text.js";*/
+import debug from "../comm/debug.js";
+import TextChat from "../chat/text.js";
 
 export default class Conversation {
 
@@ -15,26 +10,20 @@ export default class Conversation {
         res.send("OK");
     }
 
-    async process(body, res) {
+    process(body, res) {
         const info = body;
-        const token = await getAccessToken();
-        const staffID = info?.senderStaffId;
-        const data = {
-            "robotCode": info.robotCode,
-            "userIds": [staffID],
-            "msgKey": "sampleText",
-            "msgParam": JSON.stringify({ "content": "Have got your message" })
-        };
-        const url = 'https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend';
+        const msgtype = info.msgtype;
+        console.log(info);
 
-        const config = {
-            headers: {
-                'Accept': "application/json",
-                'Content-Type': "application/json",
-                'x-acs-dingtalk-access-token': token
-            }
-        };
+        if(msgtype === "text") {
+            chat = new TextChat(msgtype);
+        }
 
-        return axios.post(url, data, config);
+        debug.log(!!chat);
+        if(!!chat) {
+            chat.process(info, res);
+            res.send("OK");
+            return;
+        }
     }
 }
