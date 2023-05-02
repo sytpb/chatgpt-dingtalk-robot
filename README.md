@@ -72,25 +72,16 @@
 
 如图所示，将上面的字段信息填入，端口填入4位数，比如7070，然后点击Apply。 
 
+![image](https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png)
 
-需要等3-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，然后点保存，看到提示类似”保存成功“，代表服务已经配置成功了！
+![image](https://user-images.githubusercontent.com/12178686/235699569-b7c5a287-b96f-492d-9ab1-794d7368402a.png)
 
-
-
-:100: 下面就可以直接体验了，手机或电脑上企业微信进入自己创建的应用，可以和ChatGPT的聊起来了。 
-
-
-### 问题汇总
+需要等1-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击发布即可。
 
 
+:100: 下面就可以直接体验了，支持两种聊天模式，一是一对一单聊，另一个是群里添加此机器人，@他的名字，发消息让ChatGPT 回答，如文档开头的两个图片，第一张是一对一单聊，第二张是群里与ChatGPT聊天。 
 
-### ChatGPT的诞生给整个产业带来巨大的变化，希望大家多交流，多提issue 和点star 关注后续，也希望更多开发小伙伴参与进来，一起撸代码，一起搞新功能。
 
-### 微信群，部署成功，请将与Chatgpt AI聊天截图发群里（有问题建议先提issue）。
-
-<div align="center">
-     <img src="https://user-images.githubusercontent.com/12178686/234575314-214a6c68-614c-43ee-9b51-492348534785.jpg" width="200px" alt="group">
-</div>
 
 
 
