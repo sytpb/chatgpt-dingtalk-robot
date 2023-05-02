@@ -66,6 +66,7 @@
 第三步，一键部署安装服务
 <a href="https://render.com/deploy?repo=https://github.com/sytpb/chatgpt-dingtalk-robot">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+    请右键 > 新窗口打开
 </a>
 
 ![image](https://user-images.githubusercontent.com/12178686/235695916-e0d48472-6769-4d92-bdbb-7721496f3575.png)
