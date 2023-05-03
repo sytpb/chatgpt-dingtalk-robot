@@ -43,6 +43,7 @@
 <div align="center">
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235687039-5ae8aa50-c530-4218-bad5-05f22c139fa1.png" width="600px"/> </kbd>
 </div>
+<br/><br/>
 
 4、配置机器人权限，单击权限管理 > 机器人，将相关权限开通，操作如下图，
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235688384-84e36e99-26c5-4fe8-9447-6656ba4ca3df.png" /> </kbd>
