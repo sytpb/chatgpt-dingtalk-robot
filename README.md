@@ -69,7 +69,7 @@
 </a>
 请点右键 > 新标签页打开
 
-![image](https://user-images.githubusercontent.com/12178686/235695916-e0d48472-6769-4d92-bdbb-7721496f3575.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235695916-e0d48472-6769-4d92-bdbb-7721496f3575.png" /> </kbd>
 
 如图所示，将上面的字段信息填入，端口填入4位数，比如7070，然后点击Apply。 <br/><br/>
 
