@@ -80,9 +80,10 @@
 
 <kbd align="center"><img src="https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png" /></kbd>
 
-<div align="center" style="margin: 50px">
+<div align="center">
     <kbd> <img src="https://user-images.githubusercontent.com/12178686/235699569-b7c5a287-b96f-492d-9ab1-794d7368402a.png" width="800px" /> </kbd>
 </div>
+<br/><br/>
 
 需要等1-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击发布即可。
 
