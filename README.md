@@ -32,7 +32,7 @@
 ![image](https://user-images.githubusercontent.com/12178686/235679150-828883cb-213c-4d66-8059-6a2fc0015219.png)
 
 <div align="center">
-<kbd><img src="https://user-images.githubusercontent.com/12178686/235679870-f67476e4-dd30-4019-9797-c48a1b29a1d1.png" /></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/12178686/235679870-f67476e4-dd30-4019-9797-c48a1b29a1d1.png" width="400px"/></kbd>
 </div>
 
 2、单击应用功能 > 机器人与消息推送。
