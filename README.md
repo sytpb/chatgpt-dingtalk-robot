@@ -3,11 +3,11 @@
 
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/12178686/235676046-53200fda-5f48-4bb0-a2b5-00a887b8464f.jpg" width="400px">
+    <kbd><img src="https://user-images.githubusercontent.com/12178686/235676046-53200fda-5f48-4bb0-a2b5-00a887b8464f.jpg" width="400px"></kbd>
 </div>
 <br/>
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/12178686/235674823-06be7c5e-f165-46e9-ab71-c805b95547f2.png" width="800px">
+    <kbd><img src="https://user-images.githubusercontent.com/12178686/235674823-06be7c5e-f165-46e9-ab71-c805b95547f2.png" width="800px"></kbd>
 </div>
 
 <div align="center"  style="font-size: 12px; line-height: 12px;">
@@ -80,7 +80,7 @@
 
 <kbd align="center"><img src="https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png" /></kbd>
 
-<div align="center">
+<div align="center" style="margin: 10px">
     <kbd> <img src="https://user-images.githubusercontent.com/12178686/235699569-b7c5a287-b96f-492d-9ab1-794d7368402a.png" width="800px" /> </kbd>
 </div>
 
