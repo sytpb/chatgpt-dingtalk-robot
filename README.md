@@ -80,7 +80,7 @@
 
 <kbd align="center"><img src="https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png" /></kbd>
 
-<div align="center" style="margin: 10px">
+<div align="center" style="margin: 50px">
     <kbd> <img src="https://user-images.githubusercontent.com/12178686/235699569-b7c5a287-b96f-492d-9ab1-794d7368402a.png" width="800px" /> </kbd>
 </div>
 
