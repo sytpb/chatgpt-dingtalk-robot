@@ -73,8 +73,7 @@
 
 如图所示，将上面的字段信息填入，端口填入4位数，比如7070，然后点击Apply。 <br/><br/>
 
-![image](https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png)
-
+<kbd><img src="https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png" /></kbd>
 
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235699569-b7c5a287-b96f-492d-9ab1-794d7368402a.png" width="800px" /> </kbd>
 
