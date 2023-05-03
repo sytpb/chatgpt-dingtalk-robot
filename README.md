@@ -38,12 +38,12 @@
 点亮此按扭
 
 3、打开机器人配置开关后，填写机器人相关配置信息，除了**消息接收地址**，信息完善后，请点<发布>，成功会看到“编辑成功”提示。
-![image](https://user-images.githubusercontent.com/12178686/235687039-5ae8aa50-c530-4218-bad5-05f22c139fa1.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235687039-5ae8aa50-c530-4218-bad5-05f22c139fa1.png /> </kbd>
 
 4、配置机器人权限，单击权限管理 > 机器人，将相关权限开通，操作如下图，
-![ab08c6e7a74e2c6b203fdb896788ba4](https://user-images.githubusercontent.com/12178686/235688384-84e36e99-26c5-4fe8-9447-6656ba4ca3df.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235688384-84e36e99-26c5-4fe8-9447-6656ba4ca3df.png" /> </kbd>
 
-![ea4920a43612dd2c8bb7a5959b89c57](https://user-images.githubusercontent.com/12178686/235688637-cb847183-e774-4de8-a103-fcc36576b2c0.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235688637-cb847183-e774-4de8-a103-fcc36576b2c0.png" /> </kbd>
 
 
 
@@ -53,19 +53,19 @@
 1、**open-api-key**
 
 这个需要在ChatGPT账号里生成
-![image](https://user-images.githubusercontent.com/12178686/233278134-9d3fb914-9f3a-4049-b20e-3b0f237239f6.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/233278134-9d3fb914-9f3a-4049-b20e-3b0f237239f6.png" /> </kbd>
 
 [申请网址API KEY](https://platform.openai.com/account/api-keys)
 
 2、**AppKey AppSecret**
-![image](https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png)
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png" /> </kbd>
 
 
 
 
 第三步，一键部署安装服务
 <a href="https://render.com/deploy?repo=https://github.com/sytpb/chatgpt-dingtalk-robot">
-  <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+  <kbd><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></kbd>
 </a>
 请点右键 > 新标签页打开
 
