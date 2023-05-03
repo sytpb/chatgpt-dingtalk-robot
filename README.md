@@ -31,14 +31,18 @@
 
 ![image](https://user-images.githubusercontent.com/12178686/235679150-828883cb-213c-4d66-8059-6a2fc0015219.png)
 
-![image](https://user-images.githubusercontent.com/12178686/235679870-f67476e4-dd30-4019-9797-c48a1b29a1d1.png)
+<div align="center">
+<kbd><img src="https://user-images.githubusercontent.com/12178686/235679870-f67476e4-dd30-4019-9797-c48a1b29a1d1.png" /></kbd>
+</div>
 
 2、单击应用功能 > 机器人与消息推送。
 ![image](https://user-images.githubusercontent.com/12178686/235680489-906ff1f9-57b6-4964-bba0-9f98667917c7.png)
 点亮此按扭
 
 3、打开机器人配置开关后，填写机器人相关配置信息，除了**消息接收地址**，信息完善后，请点<发布>，成功会看到“编辑成功”提示。
+<div align="center">
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235687039-5ae8aa50-c530-4218-bad5-05f22c139fa1.png" width="600px"/> </kbd>
+</div>
 
 4、配置机器人权限，单击权限管理 > 机器人，将相关权限开通，操作如下图，
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235688384-84e36e99-26c5-4fe8-9447-6656ba4ca3df.png" /> </kbd>
