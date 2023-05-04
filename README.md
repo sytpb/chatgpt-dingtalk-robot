@@ -91,7 +91,8 @@
 :100: 下面就可以直接体验了，支持两种聊天模式，一是一对一单聊，另一个是群里添加此机器人，@他的名字，发消息让ChatGPT 回答，如文档开头的两个图片，第一张是一对一单聊，第二张是群里与ChatGPT聊天。 
 
 
-
-
+<div align="center">
+    <kbd> <img src="https://user-images.githubusercontent.com/12178686/236080457-3fe7f8cf-3d2b-4bdb-937c-289c92e3900a.jpg" width="200px" alt="group"> </kbd>
+</div>
 
 
