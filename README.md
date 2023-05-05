@@ -22,6 +22,7 @@
 
 
 ## 部署方法
+[指导视频](https://youtu.be/JgBNsWQcSqw)
 
 1. 创建企业微信应用<br>
 
