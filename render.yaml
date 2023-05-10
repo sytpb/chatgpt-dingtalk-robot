@@ -19,5 +19,8 @@ services:
         sync: false
       - key: APPSECRET
         sync: false
+      - key: MODE
+        value: gpt-3.5-turbo
+        sync: false
       - key: OPENAI_API_KEY
         sync: false
