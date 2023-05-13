@@ -3,6 +3,7 @@ import axios from "axios";
 import Chat from "./chat.js";
 import debug from "../comm/debug.js";
 import { OpenAI } from "../service/openai.js";
+import { MDUserMsg, MDGroupMsg } from "./template.js";
 import { getAccessToken } from "../ding/accesstoken.js";
 
 export default class TextChat extends Chat {
@@ -12,10 +13,10 @@ export default class TextChat extends Chat {
         this.host = 'https://api.dingtalk.com';
     }
 
-    async toUser(staffID, robotCode, answer) {
+    async toUser(staffID, robotCode, answer, res) {
         /*response to dingtalk*/
         const token = await getAccessToken();
-        debug.log(answer);
+        debug.out(answer);
 
         const data = {
             "robotCode": robotCode,
@@ -33,7 +34,8 @@ export default class TextChat extends Chat {
             }
         };
 
-        return axios.post(url, data, config);
+        await axios.post(url, data, config);
+        res.send("OK");
     }
 
     async toGroup(conversationID, robotCode, answer) {
@@ -47,7 +49,7 @@ export default class TextChat extends Chat {
             "msgKey": "sampleText",
             "msgParam": JSON.stringify({ "content": answer })
         };
-        
+
         const url = this.host + '/v1.0/robot/groupMessages/send';
 
         const config = {
@@ -61,6 +63,50 @@ export default class TextChat extends Chat {
         return axios.post(url, data, config);
     }
 
+    async reply(info, answer, res) {
+        const senderId = info.senderId;
+        const webHook = info.sessionWebhook;
+
+        let markdown = null;
+        if (info.conversationType === '1')
+            markdown = MDUserMsg(answer.slice(0,6), answer);
+        else if (info.conversationType === '2')
+            markdown = MDGroupMsg(answer.slice(0,6), senderId, answer);
+        
+        /*const markdownMsg = `<font color=#008000>@${senderId} </font>  \n\n ${answer}`;
+
+        const data = {
+            "msgtype": "markdown",
+            "markdown": {
+                "title": answer.slice(0,6),
+                "text": markdownMsg
+            },
+            "at": {
+                "atDingtalkIds": [
+                    senderId
+                ],
+            }
+        }
+        const config = {
+            method: 'post',
+            url: webHook,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: JSON.stringify(data)
+        }
+        
+        await axios(config);
+        res.send("OK");*/
+
+        res.set({
+            'Content-Type': 'application/json',
+            'url': webHook
+        });
+        res.send(JSON.stringify(markdown));
+    }
+
+
     process(info, res) {
 
         const question = info?.text?.content;
@@ -70,15 +116,16 @@ export default class TextChat extends Chat {
         const openai = new OpenAI();
         openai.ctText(question).then(result => {
             const content = result?.data?.choices[0]?.message?.content;
-            debug.out(content);
+            debug.log(content);
             if (!content)
                 return;
 
             const answer = content;
-            if(info.conversationType === '1')
-                this.toUser(info?.senderStaffId, robotCode, answer);
-            else if(info.conversationType === '2')
-                this.toGroup(info?.conversationId, robotCode, answer);
+            this.reply(info, answer, res);
+            /*if (info.conversationType === '1')
+                this.toUser(info?.senderStaffId, robotCode, answer, res);
+            else if (info.conversationType === '2')
+                this.toGroup(info?.conversationId, robotCode, answer);*/
         });
     }
 

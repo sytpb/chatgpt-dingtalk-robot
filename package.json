@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",

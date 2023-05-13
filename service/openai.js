@@ -1,7 +1,7 @@
 
 import { Configuration, OpenAIApi } from "openai";
 
-const models = ['text-davinci-003','code-davinci-002','gpt-3.5-turbo'];
+const models = ['text-davinci-003','code-davinci-002','gpt-3.5-turbo','gpt-4'];
 
 
 export class OpenAI {
@@ -20,7 +20,7 @@ export class OpenAI {
 
         try {
             const res = await this.#openai.createChatCompletion({
-                model: process.env.MODE,
+                model: process.env.MODEL,
                 messages:[{role:"user",content: question}]
             });
 
@@ -28,7 +28,7 @@ export class OpenAI {
         }
         catch(error) {
             console.log("OpenAI happen error!");
-            console.log(error?.response?.data?.error);
+            console.log(error);
         }
     }
 

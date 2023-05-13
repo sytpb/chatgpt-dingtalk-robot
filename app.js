@@ -29,3 +29,5 @@ initAccessToken();
 app.listen(PORT, () => {
     debug.out(`Server Running on Port:${PORT}`);
 });
+
+export default app;
