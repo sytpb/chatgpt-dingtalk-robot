@@ -104,6 +104,13 @@
 欢迎来群里讨论！
 <div align="center">
     <kbd> <img src="https://user-images.githubusercontent.com/12178686/236080457-3fe7f8cf-3d2b-4bdb-937c-289c92e3900a.jpg" width="200px" alt="group"> </kbd>
+   
+
 </div>
+<div align="center">
+    <kbd> <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cf4b92cd-be6f-41f9-81d6-1c0c482363e4" width="200px" alt="group"> </kbd>
+
+</div>
+
 
 
