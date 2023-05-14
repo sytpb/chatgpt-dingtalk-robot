@@ -20,7 +20,7 @@
 1. 功能集成，将ChatGPT问答功能集成到钉钉，借助钉钉机器人功能，我们可以与ChatGPT一对一问答，或者在群里让ChatGPT参与问答，安装请参照下面的**部署方法**
 2. 更强大的功能扩展，本项目为开源项目，有开发能力的小伙伴可以Fork到自己的仓库，根据自己企业业务需要，比如结合钉钉开放的API，二次开发一些其他功能。
 
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot&env=PORT,APPKEY,APPSECRET,MODEL,OPENAI_API_KEY"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
 ## 部署方法
 [指导视频](https://youtu.be/JgBNsWQcSqw)
 
