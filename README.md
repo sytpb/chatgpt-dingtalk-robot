@@ -71,7 +71,7 @@
 请点右键 > 新标签页打开 <br/>
 
 <kbd>
-     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8" /> 
+     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4b8390f2-027a-45de-b199-264774c088d0" /> 
 </kbd>
 <br/><br/>
 请将*Create private Git Repository* 勾点掉，然后点击 Create
@@ -81,7 +81,7 @@
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/bdcb5f0c-14c7-4a0a-9409-5d5e157bd92e" />
 </kbd>
 <br/><br/>
-这一步要填入相关参数，注意，前后不要加入多余的空格， OPENAI_MODEL, 可以填入gpt-3.5-turbo或者gpt-4， **注意账号不支持gpt4,要填入 gpt-3.5-turbo，否则无法使用**。 然后点击 Deploy。
+这一步要填入相关参数，注意，前后不要加入多余的空格， OPENAI_MODEL, 可以填入gpt-3.5-turbo或者gpt-4， ** 注意账号不支持gpt4,要填入 gpt-3.5-turbo，否则无法使用 **。 然后点击 Deploy。
 <br/><br/>    
 
 <kbd>
@@ -95,12 +95,12 @@
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901" />
 </kbd>
 <br/> <br/>
-绑定自己的域名,填入域名，点 Add
+绑定自己的域名,填入域名，点 Add。
 <br/> <br/>
     
     
 <kbd>
-    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe" />
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/510f3fea-8fcb-4569-9dac-703fad7bdca4" />
 </kbd>
 <br/> <br/>
 保持默认，点 Add
@@ -127,7 +127,7 @@
 配置成功，Vercel 页面会自动出现所示标志。
 <br/> <br/>
     
-**把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
+**把域名加上/message**, 比如域名是abc.com  URL： https://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
 
 ## 部署方式二 --Render方式
 <details>
@@ -164,7 +164,6 @@
 
 
 
-
 第二步，部署前的准备工作
 
 1、**open-api-key**
@@ -176,7 +175,6 @@
 
 2、**AppKey AppSecret**
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png" /> </kbd>
-
 
 
 
