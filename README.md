@@ -74,7 +74,7 @@
      <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8" /> 
 </kbd>
 <br/><br/>
-请将*Create private Git Repository* 勾点掉，然后点击<Create>
+请将*Create private Git Repository* 勾点掉，然后点击 Create
 <br/><br/>
     
 <kbd>
@@ -95,7 +95,7 @@
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901" />
 </kbd>
 <br/> <br/>
-绑定自己的域名,填入域名，点<Add>
+绑定自己的域名,填入域名，点 Add
 <br/> <br/>
     
     
