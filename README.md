@@ -21,7 +21,7 @@
 2. 更强大的功能扩展，本项目为开源项目，有开发能力的小伙伴可以Fork到自己的仓库，根据自己企业业务需要，比如结合钉钉开放的API，二次开发一些其他功能。
 
 
-## 部署方式一 --Vercel方式（推荐）
+## 部署方式一 Vercel方式（推荐）
 1. 创建钉钉应用<br>
 
 
@@ -63,7 +63,7 @@
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png" /> </kbd>
 
 3、**要有一个自己的域名**
-
+自己已经注册好的一个域名。
 
 第三步，一键部署安装服务
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
@@ -128,7 +128,7 @@
     
 **把域名加上/message**, 比如域名是abc.com  URL： https://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。到此部署完成！
 
-## 部署方式二 --Render方式
+## 部署方式二 Render方式
 <details>
     <summary>点击查看详细</summary>
 <br>
