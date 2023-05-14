@@ -21,10 +21,74 @@
 2. 更强大的功能扩展，本项目为开源项目，有开发能力的小伙伴可以Fork到自己的仓库，根据自己企业业务需要，比如结合钉钉开放的API，二次开发一些其他功能。
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
-## 部署方法
+
+## 部署方法--Vercel方式（推荐）
+1. 创建钉钉应用<br>
+
+
+第一步，创建应用。<br/>
+1、登录[钉钉开发者后台](https://open-dev.dingtalk.com/#/)，选择应用开发 > 企业内部开发 > 创建应用，单击创建应用；创建应用后，进入机器人与消息推送页面，进入机器人配置页面。
+
+![image](https://user-images.githubusercontent.com/12178686/235679150-828883cb-213c-4d66-8059-6a2fc0015219.png)
+
+<div align="center">
+<kbd><img src="https://user-images.githubusercontent.com/12178686/235679870-f67476e4-dd30-4019-9797-c48a1b29a1d1.png" width="400px"/></kbd>
+</div>
+
+2、单击应用功能 > 机器人与消息推送。
+![image](https://user-images.githubusercontent.com/12178686/235680489-906ff1f9-57b6-4964-bba0-9f98667917c7.png)
+点亮此按扭
+
+3、打开机器人配置开关后，填写机器人相关配置信息，除了**消息接收地址**，信息完善后，请点<发布>，成功会看到“编辑成功”提示。
+<div align="center">
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235687039-5ae8aa50-c530-4218-bad5-05f22c139fa1.png" width="600px"/> </kbd>
+</div>
+<br/><br/>
+
+4、配置机器人权限，单击权限管理 > 机器人，将相关权限开通，操作如下图，
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235688384-84e36e99-26c5-4fe8-9447-6656ba4ca3df.png" /> </kbd>
+
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235688637-cb847183-e774-4de8-a103-fcc36576b2c0.png" /> </kbd>
+
+
+第二步，部署前的准备工作
+
+1、**open-api-key**
+
+这个需要在ChatGPT账号里生成
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/233278134-9d3fb914-9f3a-4049-b20e-3b0f237239f6.png" /> </kbd>
+
+[申请网址API KEY](https://platform.openai.com/account/api-keys)
+
+2、**AppKey AppSecret**
+<kbd> <img src="https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png" /> </kbd>
+
+
+
+第三步，一键部署安装服务
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
+请点右键 > 新标签页打开
+
+![c0f7f8c343f7719b0140d253143d8a4](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8)
+![5f57c304468caf3df311795cfac7779](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/bdcb5f0c-14c7-4a0a-9409-5d5e157bd92e)
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/52775310-2543-4b00-82f1-6aa52a142750)
+
+![2bf6275483258a5e5264abe274d44c7](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901)
+
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/ec5c9f15-a248-4161-8e98-79cfb91c6549)
+
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe)
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cc6a06b7-af1a-4821-8f75-383efa1437e4)
+
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4e26c7e2-07e9-48a1-b16d-a67abcb6e3d7)
+![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/7b2897ce-3f72-4c8f-bfe8-218b739e829e)
+
+**把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
+
+## 部署方法--Render方式
 [指导视频](https://youtu.be/JgBNsWQcSqw)
 
-1. 创建企业微信应用<br>
+1. 创建钉钉应用<br>
 
 
 第一步，创建应用。<br/>
