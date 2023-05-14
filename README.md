@@ -22,7 +22,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
 
-## 部署方法--Vercel方式（推荐）
+## 部署方式一 --Vercel方式（推荐）
 1. 创建钉钉应用<br>
 
 
@@ -68,24 +68,45 @@
 第三步，一键部署安装服务
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
 请点右键 > 新标签页打开
+<kbd>
+     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8" /> 
+</kbd>
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/bdcb5f0c-14c7-4a0a-9409-5d5e157bd92e" />
+</kbd>
 
-![c0f7f8c343f7719b0140d253143d8a4](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8)
-![5f57c304468caf3df311795cfac7779](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/bdcb5f0c-14c7-4a0a-9409-5d5e157bd92e)
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/52775310-2543-4b00-82f1-6aa52a142750)
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/52775310-2543-4b00-82f1-6aa52a142750" />
+</kbd>
 
-![2bf6275483258a5e5264abe274d44c7](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901)
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901" />
+</kbd>
 
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/ec5c9f15-a248-4161-8e98-79cfb91c6549)
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/ec5c9f15-a248-4161-8e98-79cfb91c6549" />
+</kbd>
 
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe)
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cc6a06b7-af1a-4821-8f75-383efa1437e4)
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe" />
+</kbd>
 
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4e26c7e2-07e9-48a1-b16d-a67abcb6e3d7)
-![image](https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/7b2897ce-3f72-4c8f-bfe8-218b739e829e)
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cc6a06b7-af1a-4821-8f75-383efa1437e4" />
+</kbd>
+
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4e26c7e2-07e9-48a1-b16d-a67abcb6e3d7" />
+</kbd>
+
+<kbd>
+    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/7b2897ce-3f72-4c8f-bfe8-218b739e829e" />
+</kbd>
+
 
 **把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
 
-## 部署方法--Render方式
+## 部署方式二 --Render方式
 <details>
     <summary>点击查看详细</summary>
 <br>
