@@ -63,47 +63,63 @@
 2、**AppKey AppSecret**
 <kbd> <img src="https://user-images.githubusercontent.com/12178686/235689786-0b284295-3f94-47ad-a3a8-557c2ef8f91e.png" /> </kbd>
 
+3、**要有一个自己的域名**
 
 
 第三步，一键部署安装服务
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
-请点右键 > 新标签页打开
+请点右键 > 新标签页打开 <br/>
+
 <kbd>
      <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d9b9761b-a7a8-4e25-a29b-a82d1c63fca8" /> 
 </kbd>
+<br/>
+请将*Create private Git Repository* 勾点掉，然后点击<Create>
+
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/bdcb5f0c-14c7-4a0a-9409-5d5e157bd92e" />
 </kbd>
+<br/>
+这一步要填入相关参数，注意，前后不要加入多余的空格， OPENAI_MODEL, 可以填入gpt-3.5-turbo或者gpt-4， **注意账号不支持gpt4,要填入 gpt-3.5-turbo，否则无法使用**。 然后点击<Deploy>
+<br/>    
 
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/52775310-2543-4b00-82f1-6aa52a142750" />
 </kbd>
-
+部署成功，如图所示。
+<br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901" />
 </kbd>
-
+绑定自己的域名,按照下面流程完成即可。
+<br/> <br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/ec5c9f15-a248-4161-8e98-79cfb91c6549" />
 </kbd>
-
+<br/> <br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe" />
 </kbd>
-
+<br/> <br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cc6a06b7-af1a-4821-8f75-383efa1437e4" />
 </kbd>
-
+<br/> <br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4e26c7e2-07e9-48a1-b16d-a67abcb6e3d7" />
 </kbd>
-
+<br/> <br/>
+    
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/7b2897ce-3f72-4c8f-bfe8-218b739e829e" />
 </kbd>
-
-
+<br/> <br/>
+    
 **把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
 
 ## 部署方式二 --Render方式
