@@ -86,6 +86,9 @@
 **把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
 
 ## 部署方法--Render方式
+<details>
+    <summary>点击查看详细</summary>
+<br>
 [指导视频](https://youtu.be/JgBNsWQcSqw)
 
 1. 创建钉钉应用<br>
@@ -151,7 +154,8 @@
 <br/><br/>
 
 需要等1-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
-
+</details>
+    
 ## 功能支持
 :100: 下面就可以直接体验了，支持两种聊天模式，一是一对一单聊，另一个是群里添加此机器人，@他的名字，发消息让ChatGPT 回答，如文档开头的两个图片，第一张是一对一单聊，第二张是群里与ChatGPT聊天,更多使用场景请加群讨论。（有问题请提issue)
 
