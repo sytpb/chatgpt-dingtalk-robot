@@ -92,32 +92,32 @@
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/d5f2ae85-342f-4a56-b1e0-314abbbde901" />
 </kbd>
-绑定自己的域名,按照下面流程完成即可。
+绑定自己的域名,填入域名，点<Add>
 <br/> <br/>
     
-<kbd>
-    <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/ec5c9f15-a248-4161-8e98-79cfb91c6549" />
-</kbd>
-<br/> <br/>
     
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/874b2a61-f377-432c-b737-e3ba2657a1fe" />
 </kbd>
+保持默认，点<Add>
 <br/> <br/>
     
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cc6a06b7-af1a-4821-8f75-383efa1437e4" />
 </kbd>
+复制 IP地址
 <br/> <br/>
     
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/4e26c7e2-07e9-48a1-b16d-a67abcb6e3d7" />
 </kbd>
+到自己购买域名的控制台，我这里是腾讯云控制台，给域名增加解析记录，如图所示，一条A记录，一条CNAME记录。
 <br/> <br/>
     
 <kbd>
     <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/7b2897ce-3f72-4c8f-bfe8-218b739e829e" />
 </kbd>
+
 <br/> <br/>
     
 **把域名加上/message**, 比如域名是abc.com  URLhttps://www.abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
