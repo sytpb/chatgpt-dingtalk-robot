@@ -19,7 +19,7 @@ services:
         sync: false
       - key: APPSECRET
         sync: false
-      - key: MODE
-        value: gpt-4
+      - key: OPENAI_MODEL
+        sync: false
       - key: OPENAI_API_KEY
         sync: false
