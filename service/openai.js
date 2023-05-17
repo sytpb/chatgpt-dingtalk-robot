@@ -16,6 +16,22 @@ export class OpenAI {
     static create() {
     }
 
+    async ctChat(context) {
+
+        try {
+            const res = await this.#openai.createChatCompletion({
+                model: process.env.OPENAI_MODEL,
+                messages: context
+            });
+
+            return res;
+        }
+        catch(error) {
+            console.log("OpenAI happen error!");
+            console.log(error);
+        }
+    }
+
     async ctText(question) {
 
         try {

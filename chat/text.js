@@ -1,6 +1,7 @@
 "use strict"
 import axios from "axios";
 import Chat from "./chat.js";
+import Session from "./session.js";
 import debug from "../comm/debug.js";
 import { OpenAI } from "../service/openai.js";
 import { MDUserMsg, MDGroupMsg } from "./template.js";
@@ -69,36 +70,10 @@ export default class TextChat extends Chat {
 
         let markdown = null;
         if (info.conversationType === '1')
-            markdown = MDUserMsg(answer.slice(0,6), answer);
+            markdown = MDUserMsg(answer.slice(0,30), answer);
         else if (info.conversationType === '2')
-            markdown = MDGroupMsg(answer.slice(0,6), senderId, answer);
+            markdown = MDGroupMsg(answer.slice(0,30), senderId, answer);
         
-        /*const markdownMsg = `<font color=#008000>@${senderId} </font>  \n\n ${answer}`;
-
-        const data = {
-            "msgtype": "markdown",
-            "markdown": {
-                "title": answer.slice(0,6),
-                "text": markdownMsg
-            },
-            "at": {
-                "atDingtalkIds": [
-                    senderId
-                ],
-            }
-        }
-        const config = {
-            method: 'post',
-            url: webHook,
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            data: JSON.stringify(data)
-        }
-        
-        await axios(config);
-        res.send("OK");*/
-
         res.set({
             'Content-Type': 'application/json',
             'url': webHook
@@ -114,14 +89,18 @@ export default class TextChat extends Chat {
         const robotCode = info?.robotCode;
 
         const openai = new OpenAI();
-        openai.ctText(question).then(result => {
-            const content = result?.data?.choices[0]?.message?.content;
-            debug.log(content);
-            if (!content)
+        const context = Session.get(info.conversationId);
+
+        openai.ctChat(context).then(result => {
+            const message = result?.data?.choices[0]?.message;
+            debug.log(message?.content);
+            if (!message?.content)
                 return;
 
-            const answer = content;
+            const answer = message.content;
             this.reply(info, answer, res);
+            Session.update(info.conversationId, {"role":"user" ,"content":question});
+            Session.update(info.conversationId, message);
             /*if (info.conversationType === '1')
                 this.toUser(info?.senderStaffId, robotCode, answer, res);
             else if (info.conversationType === '2')
