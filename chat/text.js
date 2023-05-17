@@ -89,8 +89,9 @@ export default class TextChat extends Chat {
         const robotCode = info?.robotCode;
 
         const openai = new OpenAI();
-        const context = Session.get(info.conversationId);
-
+        const context = Session.update(info.conversationId, {"role":"user" ,"content":question});
+        debug.out(context);
+        
         openai.ctChat(context).then(result => {
             const message = result?.data?.choices[0]?.message;
             debug.log(message?.content);
@@ -99,7 +100,6 @@ export default class TextChat extends Chat {
 
             const answer = message.content;
             this.reply(info, answer, res);
-            Session.update(info.conversationId, {"role":"user" ,"content":question});
             Session.update(info.conversationId, message);
             /*if (info.conversationType === '1')
                 this.toUser(info?.senderStaffId, robotCode, answer, res);
