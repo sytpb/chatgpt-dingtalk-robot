@@ -218,6 +218,7 @@ docker run --env-file .env.local -p 6060:6060 -d docker4bill/ww-openai-node:alpi
 4. 用 `caddy` 或者 `nginx` 给以上服务做个反代即可
 
 </details>    
+
 ## 功能支持
 部署完成，:100: 下面就可以直接使用了，支持两种聊天模式，一是一对一单聊，另一个是群里添加此机器人，@他的名字，发消息让ChatGPT 回答，如文档开头的两个图片，第一张是一对一单聊，第二张是群里与ChatGPT聊天,更多使用场景请加群讨论。（有问题请提issue)
 
