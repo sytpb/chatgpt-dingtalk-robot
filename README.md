@@ -196,7 +196,28 @@
 
 需要等1-5分钟部署，完成后复制生成的服务的URL，如下图，**然后拷贝URL后面拼接上/message**, 比如URL是 https://abc.com 拼接成 https://abc.com/message， 粘贴到上面**消息接收地址**页面里，点击<调试>，然后再次点击<发布>即可。
 </details>
-    
+
+## 部署方式三 Docker方式
+<details>
+<summary>服务器docker部署</summary>
+
+1. 前提条件:
+  - 一台服务器
+  - 一个域名
+
+2. 复制变量文件 `.env.example`，填写自己的配置
+
+3. 运行docker
+假设新变量文件名为 `.env.local`
+
+```bash
+# docker4bill/ww-openai-node:alpine 为构建好的镜像，你也可以利用本仓库的 Dockerfile 构建自己的镜像
+docker run --env-file .env.local -p 6060:6060 -d docker4bill/ww-openai-node:alpine
+```
+
+4. 用 `caddy` 或者 `nginx` 给以上服务做个反代即可
+
+</details>    
 ## 功能支持
 部署完成，:100: 下面就可以直接使用了，支持两种聊天模式，一是一对一单聊，另一个是群里添加此机器人，@他的名字，发消息让ChatGPT 回答，如文档开头的两个图片，第一张是一对一单聊，第二张是群里与ChatGPT聊天,更多使用场景请加群讨论。（有问题请提issue)
 
