@@ -235,7 +235,7 @@ docker run --env-file .env.local -p 6060:6060 -d docker4bill/ww-openai-node:alpi
 欢迎来群里讨论！
 
 <div align="center">
-    <kbd> <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/cf4b92cd-be6f-41f9-81d6-1c0c482363e4" width="200px" alt="group"> </kbd>
+    <kbd> <img src="https://github.com/sytpb/chatgpt-dingtalk-robot/assets/12178686/1689367d-b06c-4a19-ae53-7e6223949306" width="200px" alt="group"> </kbd>
 </div>
 
 
