@@ -70,7 +70,7 @@
 自己已经注册好的一个域名。
 
 第三步，一键部署安装服务
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fbeta&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsytpb%2Fchatgpt-dingtalk-robot%2Ftree%2Fmain&env=PORT,APPKEY,APPSECRET,OPENAI_MODEL,OPENAI_API_KEY&project-name=chatgpt-dingtalk-robot&repository-name=chatgpt-dingtalk-robot)
 请点右键 > 新标签页打开 <br/>
 
 <kbd>
