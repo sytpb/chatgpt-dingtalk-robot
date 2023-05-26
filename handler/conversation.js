@@ -14,16 +14,16 @@ export default class Conversation {
         
         let chat = null; 
         const info = body;
-        const msgtype = info.msgtype;
-        /*debug.out(info);*/
 
+        const msgtype = info.msgtype;
+        
         if(msgtype === "text") {
             chat = new TextChat(msgtype);
         }
 
         if(!!chat) {
             chat.process(info, res);
-            res.send("OK");
+            /*res.send("OK");*/
             return;
         }
     }
