@@ -23,3 +23,5 @@ services:
         sync: false
       - key: OPENAI_API_KEY
         sync: false
+      - key: CHAT_HISTORY
+        sync: false

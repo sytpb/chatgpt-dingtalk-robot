@@ -78,7 +78,8 @@ export default class TextChat extends Chat {
             'Content-Type': 'application/json',
             'url': webHook
         });
-        res.send(JSON.stringify(markdown));
+        const result = res.send(JSON.stringify(markdown));
+        debug.log(result);
     }
 
 
