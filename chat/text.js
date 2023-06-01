@@ -85,11 +85,13 @@ export default class TextChat extends Chat {
     process(info, res) {
 
         const question = info?.text?.content;
+        let context = [{"role":"user" ,"content":question}];
         //const staffID = info?.senderStaffId;
         const robotCode = info?.robotCode;
 
         const openai = new OpenAI();
-        const context = Session.update(info.conversationId, {"role":"user" ,"content":question});
+        if(process.env.CHAT_HISTORY === "yes")
+            context = Session.update(info.conversationId, {"role":"user" ,"content":question});
         debug.out(context);
         
         openai.ctChat(context).then(result => {
@@ -100,11 +102,6 @@ export default class TextChat extends Chat {
 
             const answer = message.content;
             this.reply(info, answer, res);
-            Session.update(info.conversationId, message);
-            /*if (info.conversationType === '1')
-                this.toUser(info?.senderStaffId, robotCode, answer, res);
-            else if (info.conversationType === '2')
-                this.toGroup(info?.conversationId, robotCode, answer);*/
         });
     }
 
