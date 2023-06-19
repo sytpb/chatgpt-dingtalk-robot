@@ -192,7 +192,16 @@
 
 
 如图所示，将上面的字段信息填入，端口填入4位数，比如7070，然后点击Apply。 注意现更新增加了OPENAI_MODEL  值可以是gpt-3.5-turbo 或者gpt-4（如果你的key支持可填） <br/><br/>
+**参数请参照下表完成,注意值前后不要有空格**
 
+| Key                               |  value                         | 说明                                                                                                                                      |
+| --------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| APPKEY                            |                                |                                                                                                                                           |
+| APPSECRET                         |                                |                                                                                                                                           |
+| OPENAI_API_KEY                    |                                |                                                                                                                                           |
+| OPENAI_MODEL                      |  gpt-3.5-turbo                 |     gpt-3.5-turbo 或者gpt-4    注意：不支持gpt4填入gpt-4无效                                                                               |
+| PORT                              |  7070                          |     可以改成其他                                                                                                                          |
+|CHAT_HISTORY                       |  no                            |     yes 或者 no  yes支持上下文会话，no 不支持上下文，区别上下文对话token 成本高                                                             |
 
 <kbd align="center"><img src="https://user-images.githubusercontent.com/12178686/235698794-a8df81fc-9fe6-43b4-9705-e1fd6cd3b18e.png" /></kbd>
 
