@@ -14,6 +14,21 @@
    ChatGPT 接入钉钉, 赋能商业成功
 </div>
 
+## 大模型AI客服邀请您体验
+我们基于chatgpt 大模型, 开发了Ai智能客服，Ai智能客服7*24小时服务能力，大大节省客服成本，提高公司服务效率。 
+接入场景包括 *微信*，*公众号*，*视频号小店*，*小程序*等
+需要体验的企业欢迎聊系我，名额有限。
+
+
+<div align="center">
+     <kbd>
+         <img src="https://github.com/sytpb/chatgpt-wework-robot/assets/12178686/9f2537aa-8dab-496f-b10d-08223f1f959b" width="800px">
+     </kbd>
+</div>
+<div align="center"> https://www.youtube.com/watch?v=Wd6zc7WmeUI </div>
+
+
+
 ## 关于本项目
 本项目可以实现一键部署ChatGPT到钉钉中，使ChatGPT与钉钉完美融合，手机或电脑上，打开钉钉，就可以使用强大的ChatGPT智能问答。截止目前，本项目可以提供两个能力:<br>
 
